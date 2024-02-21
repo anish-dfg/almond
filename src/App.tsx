@@ -1,6 +1,6 @@
-import LoginButton from "@components/auth/LoginButton";
-import LogoutButton from "@components/auth/LogoutButton";
-import OpenAI from "@components/OpenAI";
+import LoginButton from "~/components/auth/LoginButton";
+import LogoutButton from "~/components/auth/LogoutButton";
+import OpenAI from "~/components/OpenAI";
 
 const App = () => {
   return (

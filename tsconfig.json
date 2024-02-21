@@ -10,16 +10,16 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "paths": {
-      "@/*": [
+      "~/*": [
         "./src/*"
       ],
-      "@assets/*": [
+      "~assets/*": [
         "./src/assets/*"
       ],
-      "@components/*": [
+      "~components/*": [
         "./src/components/*"
       ],
-      "@services/*": [
+      "~services/*": [
         "./src/services/*"
       ]
     },

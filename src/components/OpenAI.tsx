@@ -10,23 +10,31 @@ const OpenAI = () => {
     e: any,
   ) => {
     e.preventDefault();
-    const res = await axios.post("http://localhost:8888/api/v1/ai", {
-      "model": "gpt-3.5-turbo",
-      "messages": [
-        {
-          "role": "system",
-          "content":
-            "are you kidding me? the song is by RCHP. now complete the lyric correctly: sometimes i feel like i don't have a partner...",
+    const res = await axios.post(
+      "http://localhost:8888/api/v1/ai/completions",
+      {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "system",
+            "content":
+              "complete the song lyrics: scar tissue that i wish you saw...",
+          },
+        ],
+        "temperature": 1,
+        "top_p": 1,
+        "n": 1,
+        "stream": false,
+        "max_tokens": 50,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
         },
-      ],
-      "temperature": 1,
-      "top_p": 1,
-      "n": 1,
-      "stream": false,
-      "max_tokens": 50,
-      "presence_penalty": 0,
-      "frequency_penalty": 0,
-    });
+      },
+    );
     setData(() => res.data);
   };
   return (

@@ -5,6 +5,16 @@ well as off-the-shelf AI models.
 
 Built with love.
 
+## Getting Started
+
+- Ensure you have Node.js installed (preferably LTS).
+- Install dependencies: `pnpm install` command:
+  `curl -fsSL https://bun.sh/install | bash`.
+- Invoke the start script, e.g. `pnpm dev`
+
+No docker image is available yet, but that is on the roadmap to make builds
+easier.
+
 ## License
 
 The MIT License (MIT)
