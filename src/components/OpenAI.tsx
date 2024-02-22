@@ -40,6 +40,7 @@ const OpenAI = () => {
   return (
     <div>
       OpenAI
+      <div></div>
       <button className="btn btn-large" onClick={handleFetchChatCompletion}>
         Click me
       </button>
